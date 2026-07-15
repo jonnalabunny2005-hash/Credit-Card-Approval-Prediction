@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Credit Card Approval Prediction</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Credit Card Approval Prediction</h2>
+
+<form action="/predict" method="POST">
+
+<label>Applicant ID</label>
+<input type="number" name="ID" placeholder="Enter Applicant ID" required>
+
+<label>Gender</label>
+<input type="number" name="CODE_GENDER" placeholder="Enter Gender" required>
+
+<label>Own Car</label>
+<input type="number" name="FLAG_OWN_CAR" placeholder="Enter Car Ownership" required>
+
+<label>Own House</label>
+<input type="number" name="FLAG_OWN_REALTY" placeholder="Enter House Ownership" required>
+
+<label>Number of Children</label>
+<input type="number" name="CNT_CHILDREN" placeholder="Enter Number of Children" required>
+
+<label>Annual Income</label>
+<input type="number" name="AMT_INCOME_TOTAL" placeholder="Enter Annual Income" required>
+
+<label>Income Type</label>
+<input type="number" name="NAME_INCOME_TYPE" placeholder="Enter Income Type" required>
+
+<label>Education</label>
+<input type="number" name="NAME_EDUCATION_TYPE" placeholder="Enter Education" required>
+
+<label>Family Status</label>
+<input type="number" name="NAME_FAMILY_STATUS" placeholder="Enter Family Status" required>
+
+<label>Housing Type</label>
+<input type="number" name="NAME_HOUSING_TYPE" placeholder="Enter Housing Type" required>
+
+<label>Age (Days)</label>
+<input type="number" name="DAYS_BIRTH" placeholder="Enter Age in Days" required>
+
+<label>Employment Duration (Days)</label>
+<input type="number" name="DAYS_EMPLOYED" placeholder="Enter Employment Duration" required>
+
+<label>Mobile Availability</label>
+<input type="number" name="FLAG_MOBIL" placeholder="Enter Mobile Availability" required>
+
+<label>Work Phone</label>
+<input type="number" name="FLAG_WORK_PHONE" placeholder="Enter Work Phone Availability" required>
+
+<label>Personal Phone</label>
+<input type="number" name="FLAG_PHONE" placeholder="Enter Personal Phone Availability" required>
+
+<label>Email Availability</label>
+<input type="number" name="FLAG_EMAIL" placeholder="Enter Email Availability" required>
+
+<label>Total Family Members</label>
+<input type="number" name="CNT_FAM_MEMBERS" placeholder="Enter Total Family Members" required>
+
+<label>Total Dependents</label>
+<input type="number" name="CNT_DEPENDENTS" placeholder="Enter Total Dependents" required>
+
+<label>Credit History (Months)</label>
+<input type="number" name="MONTHS_BALANCE" placeholder="Enter Credit History" required>
+
+<button type="submit">Predict Approval</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

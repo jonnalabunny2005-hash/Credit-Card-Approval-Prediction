@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Approval Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="title">
+        Credit Card Approval Prediction
+    </div>
+
+    <div class="subtitle">
+        Predict whether a customer's credit card application will be Approved or Rejected using Machine Learning.
+    </div>
+
+    <p>
+        This web application uses a trained Machine Learning model to analyze applicant information
+        and predict credit card approval based on financial and demographic details.
+    </p>
+
+    <a href="/predict" class="start-btn">
+        <button>Start Prediction</button>
+    </a>
+
+    <div class="footer">
+        Developed using Flask • Machine Learning • Random Forest
+    </div>
+
+</div>
+
+</body>
+</html>

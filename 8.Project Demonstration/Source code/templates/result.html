@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prediction Result</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Prediction Result</h1>
+
+    {% if prediction == "Credit Card Approved" %}
+
+        <div style="font-size:70px;">✅</div>
+
+        <div class="result">
+            {{ prediction }}
+        </div>
+
+        <p>
+            Congratulations!<br><br>
+            Based on the information provided, the applicant is eligible
+            for Credit Card Approval.
+        </p>
+
+    {% else %}
+
+        <div style="font-size:70px;">❌</div>
+
+        <div class="result" style="color:#ff4d4d;">
+            {{ prediction }}
+        </div>
+
+        <p>
+            Sorry!<br><br>
+            Based on the applicant details, the credit card
+            application could not be approved.
+        </p>
+
+    {% endif %}
+
+    <a href="/" class="home-btn">
+        <button>Back to Home</button>
+    </a>
+
+</div>
+
+</body>
+</html>
